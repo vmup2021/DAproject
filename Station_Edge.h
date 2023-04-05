@@ -14,70 +14,68 @@ using namespace std;
 
 class Edge;
 
-class Station {
-    private:
-        string name;
-        string district;
-        string municipality;
-        string township;
-        string line;
+class Station
+{
+private:
+    string name;
+    string district;
+    string municipality;
+    string township;
+    string line;
 
-        //Variables utilized in max flow calculations
-        Edge *prevEdge;
-        Station *prevStation;
-        bool visited;
+    // Variables utilized in max flow calculations
+    Edge *prevEdge;
+    Station *prevStation;
+    bool visited;
 
-        //Variables used in the shortestPah calculations
-        int dist;
+    // Variables used in the shortestPah calculations
+    int dist;
 
-    public:
-        //Easier to access the edges
-        vector<Edge*> adj;
+public:
+    // Easier to access the edges
+    vector<Edge *> adj;
 
-        Station(string name, string district, string municipality, string township, string line);
-        void print();
+    Station(string name, string district, string municipality, string township, string line);
 
-        void addEdge(Edge *e);
+    void addEdge(Edge *e);
 
-        //Setters and Getters
-        void setVisited(bool visited);
-        bool getVisited() const;
+    // Setters and Getters
+    void setVisited(bool visited);
+    bool getVisited() const;
 
-        void setPrevEdge(Edge *e);
-        Edge* getPrevEdge() const;
+    void setPrevEdge(Edge *e);
+    Edge *getPrevEdge() const;
 
-        void setPrevStation(Station *s);
-        Station* getPrevStation() const;
+    void setPrevStation(Station *s);
+    Station *getPrevStation() const;
 
-        void setDist(int dist);
-        int getDist() const;
+    void setDist(int dist);
+    int getDist() const;
 
-        string getName() const;
-        string getDistrict() const;
-        string getMunicipality() const;
+    string getName() const;
+    string getDistrict() const;
+    string getMunicipality() const;
 };
 
-class Edge {
+class Edge
+{
 
 private:
-    Station* source;
-    Station* destination;
+    Station *source;
+    Station *destination;
     int capacity;
     string type;
 
-    //Variables utilized in the max flow calculations
+    // Variables utilized in the max flow calculations
     int flow;
     Edge *reverse_edge;
 
-public :
-
+public:
     Edge(Station *source, Station *destination, int capacity, string type);
 
-    void print();
-
-    //Getters and Setters
-    Station* getSource() const;
-    Station* getDestination() const;
+    // Getters and Setters
+    Station *getSource() const;
+    Station *getDestination() const;
     int getCapacity() const;
     string getType() const;
 
@@ -88,4 +86,4 @@ public :
     Edge *getReverseEdge();
 };
 
-#endif //DA__STATION_EDGE_H
+#endif // DA__STATION_EDGE_H

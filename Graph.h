@@ -5,7 +5,6 @@
 #ifndef DA__GRAPH_H
 #define DA__GRAPH_H
 
-
 #include <vector>
 #include <fstream>
 #include <string>
@@ -14,45 +13,49 @@
 #include <queue>
 #include <map>
 #include <bits/stdc++.h>
-#include <limits.h>
+#include <climits>
 
 #include "Station_Edge.h"
 
-class Graph {
-    private :
+class Graph
+{
+private:
+public:
+    vector<Station> allStations;
 
-    public :
-            vector<Station> allStations;
+    Graph();
 
-            Graph();
+    // Find functions
+    Station *findStationByName(const string &stationName);
 
-            //Find functions
-            Station* findStationByName(string stationName);
+    // Read file functions
+    void readStations(const string &lineName);
+    void readEdges();
 
-            //Read file functions
-            void readStations(string lineName);
-            void readEdges();
+    void setAllStationsUnvisited();
 
-            void printStations(); //Testing purposes
-            void setAllStationsUnvisited();
+    // Search Algorithms
+    vector<Edge *> bfsFindPath(const string &source, const string &destination);
+    static vector<Edge *> returningPath(Station *sink);
 
-            //Search Algorithms
-            vector<Edge*> bfsFindPath(string source, string destination);
-            vector<Edge*> returningPath(Station *sink) const;
+    // Max Flow
+    int maxFlow(const string &source, const string &destination);
 
-            //Max Flow
-            int maxFlow(string source, string destination);
+    // Max Flow of a given station considering the entire railway grid
+    int entireMaxFlow(const string &sink);
 
-            //Max Flow of a given station considering the entire railway grid
-            int entireMaxFlow(string sink);
+    // Top pair of stations that require more trains
+    void topK(int n);
 
-            //Top pair of stations that require more trains
-            void topK(int n);
+    //(1) for the budget of Districts and (2) for budget for Municipalities
+    void getBudget(int x);
 
-            //(1) for the budget of Districts and (2) for budget for Municipalities
-            void getBudget(int x);
+    int shortestPathCost(const string &source, const string &destination);
 
-            int shortestPathCost(string source, string destination);
+    int getLines();
+
+    // Max Flow Reduced Network
+    int maxFlowReduced(const string &source, const string &destination, const string &station1, const string &station2);
 };
 
-#endif //DA__GRAPH_H
+#endif // DA__GRAPH_H
