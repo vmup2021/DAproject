@@ -1,0 +1,146 @@
+\hypertarget{classEdge}{}\doxysection{Edge Class Reference}
+\label{classEdge}\index{Edge@{Edge}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEdge_a9d8f9c1ba75db51d60b799665484ca5b}{Edge}} (\mbox{\hyperlink{classStation}{Station}} $\ast$source, \mbox{\hyperlink{classStation}{Station}} $\ast$destination, int capacity, string type)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classEdge}{Edge}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStation}{Station}} $\ast$ \mbox{\hyperlink{classEdge_af5f96a92e1310a293202e10c5a02d762}{get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em Get the destination station. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEdge_a225e92785fb02e0e985e19fe3346686b}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Get the Capacity object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classEdge_a4fdeb4c3e86ce8697925fa6b3d3ac905}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdge_a4aafeb6e74cc45cec5e2ac1c354a67fe}{set\+Flow}} (int flow)
+\begin{DoxyCompactList}\small\item\em Set the Flow object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEdge_a7d4ea1360d5d2dc593f4daa772283e8f}{get\+Flow}} () const
+\begin{DoxyCompactList}\small\item\em Get the Flow object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdge_abe940af264d7e847f495292e9cd216d1}{set\+Reverse\+Edge}} (\mbox{\hyperlink{classEdge}{Edge}} $\ast$edge)
+\begin{DoxyCompactList}\small\item\em Set the Reverse \mbox{\hyperlink{classEdge}{Edge}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEdge}{Edge}} $\ast$ \mbox{\hyperlink{classEdge_ae8f0d324a2519f752cff7182fa9d5800}{get\+Reverse\+Edge}} ()
+\begin{DoxyCompactList}\small\item\em Get the Reverse \mbox{\hyperlink{classEdge}{Edge}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEdge_a9d8f9c1ba75db51d60b799665484ca5b}\label{classEdge_a9d8f9c1ba75db51d60b799665484ca5b}} 
+\index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}}
+{\footnotesize\ttfamily Edge\+::\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStation}{Station}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{classStation}{Station}} $\ast$}]{destination,  }\item[{int}]{capacity,  }\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classEdge}{Edge}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em capacity} & \\
+\hline
+{\em type} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEdge_a225e92785fb02e0e985e19fe3346686b}\label{classEdge_a225e92785fb02e0e985e19fe3346686b}} 
+\index{Edge@{Edge}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Edge\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Capacity object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_af5f96a92e1310a293202e10c5a02d762}\label{classEdge_af5f96a92e1310a293202e10c5a02d762}} 
+\index{Edge@{Edge}!getDestination@{getDestination}}
+\index{getDestination@{getDestination}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getDestination()}{getDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStation}{Station}} $\ast$ Edge\+::get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the destination station. 
+
+\mbox{\Hypertarget{classEdge_a7d4ea1360d5d2dc593f4daa772283e8f}\label{classEdge_a7d4ea1360d5d2dc593f4daa772283e8f}} 
+\index{Edge@{Edge}!getFlow@{getFlow}}
+\index{getFlow@{getFlow}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getFlow()}{getFlow()}}
+{\footnotesize\ttfamily int Edge\+::get\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Flow object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_ae8f0d324a2519f752cff7182fa9d5800}\label{classEdge_ae8f0d324a2519f752cff7182fa9d5800}} 
+\index{Edge@{Edge}!getReverseEdge@{getReverseEdge}}
+\index{getReverseEdge@{getReverseEdge}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getReverseEdge()}{getReverseEdge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEdge}{Edge}} $\ast$ Edge\+::get\+Reverse\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Reverse \mbox{\hyperlink{classEdge}{Edge}} object. 
+
+\begin{DoxyReturn}{Returns}
+Edge$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a4fdeb4c3e86ce8697925fa6b3d3ac905}\label{classEdge_a4fdeb4c3e86ce8697925fa6b3d3ac905}} 
+\index{Edge@{Edge}!getType@{getType}}
+\index{getType@{getType}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Edge\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Type object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a4aafeb6e74cc45cec5e2ac1c354a67fe}\label{classEdge_a4aafeb6e74cc45cec5e2ac1c354a67fe}} 
+\index{Edge@{Edge}!setFlow@{setFlow}}
+\index{setFlow@{setFlow}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{setFlow()}{setFlow()}}
+{\footnotesize\ttfamily void Edge\+::set\+Flow (\begin{DoxyParamCaption}\item[{int}]{flow }\end{DoxyParamCaption})}
+
+
+
+Set the Flow object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdge_abe940af264d7e847f495292e9cd216d1}\label{classEdge_abe940af264d7e847f495292e9cd216d1}} 
+\index{Edge@{Edge}!setReverseEdge@{setReverseEdge}}
+\index{setReverseEdge@{setReverseEdge}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{setReverseEdge()}{setReverseEdge()}}
+{\footnotesize\ttfamily void Edge\+::set\+Reverse\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEdge}{Edge}} $\ast$}]{edge }\end{DoxyParamCaption})}
+
+
+
+Set the Reverse \mbox{\hyperlink{classEdge}{Edge}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+Da/daproject/\mbox{\hyperlink{Station__Edge_8h}{Station\+\_\+\+Edge.\+h}}\item 
+/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+Da/daproject/Station\+\_\+\+Edge.\+cpp\end{DoxyCompactItemize}

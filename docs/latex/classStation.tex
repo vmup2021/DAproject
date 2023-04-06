@@ -1,0 +1,240 @@
+\hypertarget{classStation}{}\doxysection{Station Class Reference}
+\label{classStation}\index{Station@{Station}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStation_a46a1672b35262d870c84aacf4f41fed1}{Station}} (string name, string district, string municipality, string township, string line)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classStation}{Station}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStation_a1b10a52b8cc41b3d49213c1959b9e720}{add\+Edge}} (\mbox{\hyperlink{classEdge}{Edge}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Adds an edge (line) to a station. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStation_a17bb35a315d323921b0841dd949f73e4}{set\+Visited}} (bool visited)
+\begin{DoxyCompactList}\small\item\em Set the Visited object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStation_acb0cb52eaa7ac310b847a7e6646f4694}{get\+Visited}} () const
+\begin{DoxyCompactList}\small\item\em Get the Visited object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStation_a5d115b3898b3dd4e2f4cd92996663cf3}{set\+Prev\+Edge}} (\mbox{\hyperlink{classEdge}{Edge}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Set the Prev \mbox{\hyperlink{classEdge}{Edge}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEdge}{Edge}} $\ast$ \mbox{\hyperlink{classStation_a06080d28e550a2599efa1dee0f4c3fd0}{get\+Prev\+Edge}} () const
+\begin{DoxyCompactList}\small\item\em Get the Prev \mbox{\hyperlink{classEdge}{Edge}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStation_af63ee9da9aa061bcdaf0a45429c4993e}{set\+Prev\+Station}} (\mbox{\hyperlink{classStation}{Station}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Set the Prev \mbox{\hyperlink{classStation}{Station}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStation}{Station}} $\ast$ \mbox{\hyperlink{classStation_a68d6d20ae2e97d32cda09d8c191182b1}{get\+Prev\+Station}} () const
+\begin{DoxyCompactList}\small\item\em Get the Prev \mbox{\hyperlink{classStation}{Station}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStation_a7cc4faa5affd5b2546741b19ca6f4305}{set\+Dist}} (int dist)
+\begin{DoxyCompactList}\small\item\em Set the Dist object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStation_af8002d32e57461be2e39360db8057464}{get\+Dist}} () const
+\begin{DoxyCompactList}\small\item\em Get the Dist object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classStation_ac823ae175ec0e2baff462ed9612c7bae}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the Name object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classStation_adfeb6e1c7361d9de1a8efade27b82c7c}{get\+District}} () const
+\begin{DoxyCompactList}\small\item\em Get the District object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classStation_a352841c01b6cdb25e84cae3b7b2f6418}{get\+Municipality}} () const
+\begin{DoxyCompactList}\small\item\em Get the Municipality object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStation_a216609bae6bdf99b1a9c2e901a9816db}\label{classStation_a216609bae6bdf99b1a9c2e901a9816db}} 
+vector$<$ \mbox{\hyperlink{classEdge}{Edge}} $\ast$ $>$ \mbox{\hyperlink{classStation_a216609bae6bdf99b1a9c2e901a9816db}{adj}}
+\begin{DoxyCompactList}\small\item\em Vector of edges (lines). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStation_a46a1672b35262d870c84aacf4f41fed1}\label{classStation_a46a1672b35262d870c84aacf4f41fed1}} 
+\index{Station@{Station}!Station@{Station}}
+\index{Station@{Station}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{Station()}{Station()}}
+{\footnotesize\ttfamily Station\+::\+Station (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{district,  }\item[{string}]{municipality,  }\item[{string}]{township,  }\item[{string}]{line }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classStation}{Station}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the station. \\
+\hline
+{\em district} & District of the station. \\
+\hline
+{\em municipality} & Municipality of the station. \\
+\hline
+{\em township} & Township of the station. \\
+\hline
+{\em line} & Line of the station. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStation_a1b10a52b8cc41b3d49213c1959b9e720}\label{classStation_a1b10a52b8cc41b3d49213c1959b9e720}} 
+\index{Station@{Station}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily void Station\+::add\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEdge}{Edge}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Adds an edge (line) to a station. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \mbox{\hyperlink{classEdge}{Edge}} to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStation_af8002d32e57461be2e39360db8057464}\label{classStation_af8002d32e57461be2e39360db8057464}} 
+\index{Station@{Station}!getDist@{getDist}}
+\index{getDist@{getDist}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getDist()}{getDist()}}
+{\footnotesize\ttfamily int Station\+::get\+Dist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Dist object. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStation_adfeb6e1c7361d9de1a8efade27b82c7c}\label{classStation_adfeb6e1c7361d9de1a8efade27b82c7c}} 
+\index{Station@{Station}!getDistrict@{getDistrict}}
+\index{getDistrict@{getDistrict}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getDistrict()}{getDistrict()}}
+{\footnotesize\ttfamily string Station\+::get\+District (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the District object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStation_a352841c01b6cdb25e84cae3b7b2f6418}\label{classStation_a352841c01b6cdb25e84cae3b7b2f6418}} 
+\index{Station@{Station}!getMunicipality@{getMunicipality}}
+\index{getMunicipality@{getMunicipality}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getMunicipality()}{getMunicipality()}}
+{\footnotesize\ttfamily string Station\+::get\+Municipality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Municipality object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStation_ac823ae175ec0e2baff462ed9612c7bae}\label{classStation_ac823ae175ec0e2baff462ed9612c7bae}} 
+\index{Station@{Station}!getName@{getName}}
+\index{getName@{getName}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Station\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Name object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStation_a06080d28e550a2599efa1dee0f4c3fd0}\label{classStation_a06080d28e550a2599efa1dee0f4c3fd0}} 
+\index{Station@{Station}!getPrevEdge@{getPrevEdge}}
+\index{getPrevEdge@{getPrevEdge}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getPrevEdge()}{getPrevEdge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEdge}{Edge}} $\ast$ Station\+::get\+Prev\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Prev \mbox{\hyperlink{classEdge}{Edge}} object. 
+
+\begin{DoxyReturn}{Returns}
+Edge$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStation_a68d6d20ae2e97d32cda09d8c191182b1}\label{classStation_a68d6d20ae2e97d32cda09d8c191182b1}} 
+\index{Station@{Station}!getPrevStation@{getPrevStation}}
+\index{getPrevStation@{getPrevStation}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getPrevStation()}{getPrevStation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStation}{Station}} $\ast$ Station\+::get\+Prev\+Station (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Prev \mbox{\hyperlink{classStation}{Station}} object. 
+
+\begin{DoxyReturn}{Returns}
+Station$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStation_acb0cb52eaa7ac310b847a7e6646f4694}\label{classStation_acb0cb52eaa7ac310b847a7e6646f4694}} 
+\index{Station@{Station}!getVisited@{getVisited}}
+\index{getVisited@{getVisited}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getVisited()}{getVisited()}}
+{\footnotesize\ttfamily bool Station\+::get\+Visited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Visited object. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStation_a7cc4faa5affd5b2546741b19ca6f4305}\label{classStation_a7cc4faa5affd5b2546741b19ca6f4305}} 
+\index{Station@{Station}!setDist@{setDist}}
+\index{setDist@{setDist}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{setDist()}{setDist()}}
+{\footnotesize\ttfamily void Station\+::set\+Dist (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption})}
+
+
+
+Set the Dist object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStation_a5d115b3898b3dd4e2f4cd92996663cf3}\label{classStation_a5d115b3898b3dd4e2f4cd92996663cf3}} 
+\index{Station@{Station}!setPrevEdge@{setPrevEdge}}
+\index{setPrevEdge@{setPrevEdge}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{setPrevEdge()}{setPrevEdge()}}
+{\footnotesize\ttfamily void Station\+::set\+Prev\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEdge}{Edge}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Set the Prev \mbox{\hyperlink{classEdge}{Edge}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStation_af63ee9da9aa061bcdaf0a45429c4993e}\label{classStation_af63ee9da9aa061bcdaf0a45429c4993e}} 
+\index{Station@{Station}!setPrevStation@{setPrevStation}}
+\index{setPrevStation@{setPrevStation}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{setPrevStation()}{setPrevStation()}}
+{\footnotesize\ttfamily void Station\+::set\+Prev\+Station (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStation}{Station}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Set the Prev \mbox{\hyperlink{classStation}{Station}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStation_a17bb35a315d323921b0841dd949f73e4}\label{classStation_a17bb35a315d323921b0841dd949f73e4}} 
+\index{Station@{Station}!setVisited@{setVisited}}
+\index{setVisited@{setVisited}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{setVisited()}{setVisited()}}
+{\footnotesize\ttfamily void Station\+::set\+Visited (\begin{DoxyParamCaption}\item[{bool}]{visited }\end{DoxyParamCaption})}
+
+
+
+Set the Visited object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visited} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+Da/daproject/\mbox{\hyperlink{Station__Edge_8h}{Station\+\_\+\+Edge.\+h}}\item 
+/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+Da/daproject/Station\+\_\+\+Edge.\+cpp\end{DoxyCompactItemize}

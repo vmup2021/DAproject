@@ -1,6 +1,3 @@
-//
-// Created by victo on 24/03/2023.
-//
 #include "Graph.h"
 
 Graph::Graph() = default;

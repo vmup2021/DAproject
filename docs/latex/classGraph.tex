@@ -1,0 +1,263 @@
+\hypertarget{classGraph}{}\doxysection{Graph Class Reference}
+\label{classGraph}\index{Graph@{Graph}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGraph_ae4c72b8ac4d693c49800a4c7e273654f}{Graph}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGraph}{Graph}}\+:\+: \mbox{\hyperlink{classGraph}{Graph}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStation}{Station}} $\ast$ \mbox{\hyperlink{classGraph_aaded8a1a67a217799f5f45241fcd9a7f}{find\+Station\+By\+Name}} (const string \&station\+Name)
+\begin{DoxyCompactList}\small\item\em This function returns the station node with the name \char`\"{}station\+Name\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_a97b568291020b40eb9e5a7670ed11cbf}{read\+Stations}} (const string \&line\+Name)
+\begin{DoxyCompactList}\small\item\em This functions handles the generation of the graph nodes from the file \char`\"{}../stations.\+csv\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_aa3f87ce1efa48b173c57dcc51a020e78}{read\+Edges}} ()
+\begin{DoxyCompactList}\small\item\em This functions handles the generation of the node\textquotesingle{}s edges from the file \char`\"{}../network.\+csv\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_a4f830c955b775bbb044b3f88a7bc9206}{set\+All\+Stations\+Unvisited}} ()
+\begin{DoxyCompactList}\small\item\em This is an auxiliary function that sets the attribute visited of every station in the graph as false. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classEdge}{Edge}} $\ast$ $>$ \mbox{\hyperlink{classGraph_ae070a617e38ec8f6a1adc2bebbae9d93}{bfs\+Find\+Path}} (const string \&source, const string \&destination)
+\begin{DoxyCompactList}\small\item\em This function returns a vector of edges that connect two stations. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGraph_a8223e7b64efa4e86b74af80d5d807cda}{max\+Flow}} (const string \&source, const string \&destination)
+\begin{DoxyCompactList}\small\item\em This function calculates the maximum number of simultaneous trains (max flow) that can travel between two stations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_a15a2f3a35fd18313508bade56d7de8ed}{topK}} (int n)
+\begin{DoxyCompactList}\small\item\em This functions sorts the pairs of stations by the amount of trains they require when taking full advantage of the network capacity and prints a n number of them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_a37d099ad4e06b7ade6917446590090de}{get\+Budget}} (int x)
+\begin{DoxyCompactList}\small\item\em This function calculates the right budget for the purchasing and maintenance of trains by districts/municipalities. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGraph_a9ff06be487b79fd5a21971cbcc4bf8b6}{entire\+Max\+Flow}} (const string \&sink)
+\begin{DoxyCompactList}\small\item\em This function calculates the maximum number of trains that can simoultaneously arrive at a given station taking into consideration the entire railway grid. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGraph_aa96e599d5c1e437b28c483eb0bdb53ae}{shortest\+Path\+Cost}} (const string \&source, const string \&destination)
+\begin{DoxyCompactList}\small\item\em This function calculates the minimum cost path between two stations. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGraph_a34dfaf45e1ddbbddd23f98b6c842c2f5}{get\+Lines}} ()
+\begin{DoxyCompactList}\small\item\em This function calculates the number of edges/lines that exist in the entire railway grid. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGraph_afacd45e7e7db47d6a33d44fadea19480}{max\+Flow\+Reduced}} (const string \&source, const string \&destination, const string \&station1, const string \&station2)
+\begin{DoxyCompactList}\small\item\em This function calculates the maximum number of trains that can simultaneously travel between two specific stations in a network of reduced connectivity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraph_a2a182e85cc852f5ee7fc3d128bd2c989}\label{classGraph_a2a182e85cc852f5ee7fc3d128bd2c989}} 
+static vector$<$ \mbox{\hyperlink{classEdge}{Edge}} $\ast$ $>$ {\bfseries returning\+Path} (\mbox{\hyperlink{classStation}{Station}} $\ast$sink)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraph_a44cc89c8cefa33a447317bbbef6bb3c2}\label{classGraph_a44cc89c8cefa33a447317bbbef6bb3c2}} 
+vector$<$ \mbox{\hyperlink{classStation}{Station}} $>$ \mbox{\hyperlink{classGraph_a44cc89c8cefa33a447317bbbef6bb3c2}{all\+Stations}}
+\begin{DoxyCompactList}\small\item\em Vector of station nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraph_ae4c72b8ac4d693c49800a4c7e273654f}\label{classGraph_ae4c72b8ac4d693c49800a4c7e273654f}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new \mbox{\hyperlink{classGraph}{Graph}}\+:\+: \mbox{\hyperlink{classGraph}{Graph}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraph_ae070a617e38ec8f6a1adc2bebbae9d93}\label{classGraph_ae070a617e38ec8f6a1adc2bebbae9d93}} 
+\index{Graph@{Graph}!bfsFindPath@{bfsFindPath}}
+\index{bfsFindPath@{bfsFindPath}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{bfsFindPath()}{bfsFindPath()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classEdge}{Edge}} $\ast$ $>$ Graph\+::bfs\+Find\+Path (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{const string \&}]{destination }\end{DoxyParamCaption})}
+
+
+
+This function returns a vector of edges that connect two stations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Name of the source station \\
+\hline
+{\em destination} & Name of the destination station \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Edge $\ast$$>$ Path between source and destination 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a9ff06be487b79fd5a21971cbcc4bf8b6}\label{classGraph_a9ff06be487b79fd5a21971cbcc4bf8b6}} 
+\index{Graph@{Graph}!entireMaxFlow@{entireMaxFlow}}
+\index{entireMaxFlow@{entireMaxFlow}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{entireMaxFlow()}{entireMaxFlow()}}
+{\footnotesize\ttfamily int Graph\+::entire\+Max\+Flow (\begin{DoxyParamCaption}\item[{const string \&}]{sink }\end{DoxyParamCaption})}
+
+
+
+This function calculates the maximum number of trains that can simoultaneously arrive at a given station taking into consideration the entire railway grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sink} & Name of the station \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Maximum number of trains that can arrive at a given station taking into consideration the entire railway grid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_aaded8a1a67a217799f5f45241fcd9a7f}\label{classGraph_aaded8a1a67a217799f5f45241fcd9a7f}} 
+\index{Graph@{Graph}!findStationByName@{findStationByName}}
+\index{findStationByName@{findStationByName}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{findStationByName()}{findStationByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStation}{Station}} $\ast$ Graph\+::find\+Station\+By\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{station\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+This function returns the station node with the name \char`\"{}station\+Name\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em station\+Name} & Name of the station node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Station$\ast$ \mbox{\hyperlink{classStation}{Station}} Node with name = \char`\"{}station\+Name\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a37d099ad4e06b7ade6917446590090de}\label{classGraph_a37d099ad4e06b7ade6917446590090de}} 
+\index{Graph@{Graph}!getBudget@{getBudget}}
+\index{getBudget@{getBudget}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getBudget()}{getBudget()}}
+{\footnotesize\ttfamily void Graph\+::get\+Budget (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+This function calculates the right budget for the purchasing and maintenance of trains by districts/municipalities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & 1 to calculate by district, 2 to calculate by municipalities \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_a34dfaf45e1ddbbddd23f98b6c842c2f5}\label{classGraph_a34dfaf45e1ddbbddd23f98b6c842c2f5}} 
+\index{Graph@{Graph}!getLines@{getLines}}
+\index{getLines@{getLines}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getLines()}{getLines()}}
+{\footnotesize\ttfamily int Graph\+::get\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function calculates the number of edges/lines that exist in the entire railway grid. 
+
+\begin{DoxyReturn}{Returns}
+int Number of lines that exist in the entire railway grid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a8223e7b64efa4e86b74af80d5d807cda}\label{classGraph_a8223e7b64efa4e86b74af80d5d807cda}} 
+\index{Graph@{Graph}!maxFlow@{maxFlow}}
+\index{maxFlow@{maxFlow}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{maxFlow()}{maxFlow()}}
+{\footnotesize\ttfamily int Graph\+::max\+Flow (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{const string \&}]{destination }\end{DoxyParamCaption})}
+
+
+
+This function calculates the maximum number of simultaneous trains (max flow) that can travel between two stations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Name of the source station \\
+\hline
+{\em destination} & Name of the destination station \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Number that simbolizes the maximum number of simultaneous trains that can travel between the two stations 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_afacd45e7e7db47d6a33d44fadea19480}\label{classGraph_afacd45e7e7db47d6a33d44fadea19480}} 
+\index{Graph@{Graph}!maxFlowReduced@{maxFlowReduced}}
+\index{maxFlowReduced@{maxFlowReduced}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{maxFlowReduced()}{maxFlowReduced()}}
+{\footnotesize\ttfamily int Graph\+::max\+Flow\+Reduced (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{const string \&}]{destination,  }\item[{const string \&}]{station1,  }\item[{const string \&}]{station2 }\end{DoxyParamCaption})}
+
+
+
+This function calculates the maximum number of trains that can simultaneously travel between two specific stations in a network of reduced connectivity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Name of the source station \\
+\hline
+{\em destination} & Name of the destination station \\
+\hline
+{\em station1} & Name of one station that has a unusable line \\
+\hline
+{\em station2} & Name of the other station thas has the unusable line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Maximum number of trains that can simultaneously travel between two specific stations in a network of reduced connectivity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_aa3f87ce1efa48b173c57dcc51a020e78}\label{classGraph_aa3f87ce1efa48b173c57dcc51a020e78}} 
+\index{Graph@{Graph}!readEdges@{readEdges}}
+\index{readEdges@{readEdges}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{readEdges()}{readEdges()}}
+{\footnotesize\ttfamily void Graph\+::read\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This functions handles the generation of the node\textquotesingle{}s edges from the file \char`\"{}../network.\+csv\char`\"{}. 
+
+\mbox{\Hypertarget{classGraph_a97b568291020b40eb9e5a7670ed11cbf}\label{classGraph_a97b568291020b40eb9e5a7670ed11cbf}} 
+\index{Graph@{Graph}!readStations@{readStations}}
+\index{readStations@{readStations}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{readStations()}{readStations()}}
+{\footnotesize\ttfamily void Graph\+::read\+Stations (\begin{DoxyParamCaption}\item[{const string \&}]{line\+Name }\end{DoxyParamCaption})}
+
+
+
+This functions handles the generation of the graph nodes from the file \char`\"{}../stations.\+csv\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Name} & This is a constraint where we decide if we want to generate the graph with the full railway network or just part of it \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_a4f830c955b775bbb044b3f88a7bc9206}\label{classGraph_a4f830c955b775bbb044b3f88a7bc9206}} 
+\index{Graph@{Graph}!setAllStationsUnvisited@{setAllStationsUnvisited}}
+\index{setAllStationsUnvisited@{setAllStationsUnvisited}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{setAllStationsUnvisited()}{setAllStationsUnvisited()}}
+{\footnotesize\ttfamily void Graph\+::set\+All\+Stations\+Unvisited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is an auxiliary function that sets the attribute visited of every station in the graph as false. 
+
+\mbox{\Hypertarget{classGraph_aa96e599d5c1e437b28c483eb0bdb53ae}\label{classGraph_aa96e599d5c1e437b28c483eb0bdb53ae}} 
+\index{Graph@{Graph}!shortestPathCost@{shortestPathCost}}
+\index{shortestPathCost@{shortestPathCost}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{shortestPathCost()}{shortestPathCost()}}
+{\footnotesize\ttfamily int Graph\+::shortest\+Path\+Cost (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{const string \&}]{destination }\end{DoxyParamCaption})}
+
+
+
+This function calculates the minimum cost path between two stations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Name of the source station \\
+\hline
+{\em destination} & Name of the destination station \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Cost of the minimum cost path between the two stations 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a15a2f3a35fd18313508bade56d7de8ed}\label{classGraph_a15a2f3a35fd18313508bade56d7de8ed}} 
+\index{Graph@{Graph}!topK@{topK}}
+\index{topK@{topK}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{topK()}{topK()}}
+{\footnotesize\ttfamily void Graph\+::topK (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+This functions sorts the pairs of stations by the amount of trains they require when taking full advantage of the network capacity and prints a n number of them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of pairs of stations to print \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+Da/daproject/Graph.\+h\item 
+/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+Da/daproject/\mbox{\hyperlink{Graph_8cpp}{Graph.\+cpp}}\end{DoxyCompactItemize}
