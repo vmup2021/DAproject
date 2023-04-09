@@ -289,7 +289,7 @@ int showReliabilityOptions()
     cout << "______________________________________" << endl;
     cout << "What would you like to do?" << endl;
     cout << "1 - Calculate the maximum number of trains between two stations with reduced connectivity" << endl;
-    cout << "2 - Report on the stations that are the most affected by each segment failure" << endl;
+    cout << "2 - Report on the stations that are the most affected by each segment failure (not working)" << endl;
     cout << "0 - Back" << endl
          << endl;
     cout << "Option: ";

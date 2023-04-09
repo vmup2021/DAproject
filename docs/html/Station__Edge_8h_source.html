@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DA Railway Network: /mnt/c/Users/up201/Desktop/FEUP/2022-23/Da/daproject/Station_Edge.h Source File</title>
+<title>DA Railway Network: /mnt/c/Users/up201/Desktop/FEUP/2022-23/DA/DAproject/Station_Edge.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">/mnt/c/Users/up201/Desktop/FEUP/2022-23/Da/daproject/Station_Edge.h</div>  </div>
+<div class="title">/mnt/c/Users/up201/Desktop/FEUP/2022-23/DA/DAproject/Station_Edge.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="Station__Edge_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
@@ -107,67 +107,70 @@ $(function() {
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> addEdge(<a class="code" href="classEdge.html">Edge</a> *e);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> setVisited(<span class="keywordtype">bool</span> visited);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> getVisited() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classEdge.html">Edge</a>* getEdge(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; destination) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> setVisited(<span class="keywordtype">bool</span> visited);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> setPrevEdge(<a class="code" href="classEdge.html">Edge</a> *e);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classEdge.html">Edge</a> *getPrevEdge() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> setPrevStation(<a class="code" href="classStation.html">Station</a> *s);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="classStation.html">Station</a> *getPrevStation() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> setDist(<span class="keywordtype">int</span> dist);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">int</span> getDist() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">string</span> getName() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">string</span> getDistrict() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">string</span> getMunicipality() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> getVisited() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> setPrevEdge(<a class="code" href="classEdge.html">Edge</a> *e);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classEdge.html">Edge</a> *getPrevEdge() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> setPrevStation(<a class="code" href="classStation.html">Station</a> *s);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classStation.html">Station</a> *getPrevStation() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> setDist(<span class="keywordtype">int</span> distance);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">int</span> getDist() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">string</span> getName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">string</span> getDistrict() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classEdge.html">  154</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEdge.html">Edge</a></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="classStation.html">Station</a> *source;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="classStation.html">Station</a> *destination;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">int</span> capacity;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">string</span> type;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">int</span> flow;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="classEdge.html">Edge</a> *reverse_edge;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="classEdge.html">Edge</a>(<a class="code" href="classStation.html">Station</a> *source, <a class="code" href="classStation.html">Station</a> *destination, <span class="keywordtype">int</span> capacity, <span class="keywordtype">string</span> type);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="classStation.html">Station</a> *getDestination() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">int</span> getCapacity() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">string</span> getType() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">string</span> getMunicipality() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;};</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="classEdge.html">  162</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEdge.html">Edge</a></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="classStation.html">Station</a> *source;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="classStation.html">Station</a> *destination;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">int</span> capacity;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">string</span> type;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordtype">int</span> flow;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="classEdge.html">Edge</a> *reverse_edge;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="classEdge.html">Edge</a>(<a class="code" href="classStation.html">Station</a> *source, <a class="code" href="classStation.html">Station</a> *destination, <span class="keywordtype">int</span> capacity, <span class="keywordtype">string</span> type);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="classStation.html">Station</a> *getSource() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="classStation.html">Station</a> *getDestination() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> setFlow(<span class="keywordtype">int</span> flow);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">int</span> getCapacity() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">int</span> getFlow() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">string</span> getType() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">void</span> setReverseEdge(<a class="code" href="classEdge.html">Edge</a> *edge);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">void</span> setFlow(<span class="keywordtype">int</span> flow);</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="classEdge.html">Edge</a> *getReverseEdge();</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;};</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#endif // DA__STATION_EDGE_H</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">int</span> getFlow() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">void</span> setReverseEdge(<a class="code" href="classEdge.html">Edge</a> *edge);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="classEdge.html">Edge</a> *getReverseEdge();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;};</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif // DA__STATION_EDGE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassStation_html"><div class="ttname"><a href="classStation.html">Station</a></div><div class="ttdef"><b>Definition:</b> Station_Edge.h:23</div></div>
-<div class="ttc" id="aclassEdge_html"><div class="ttname"><a href="classEdge.html">Edge</a></div><div class="ttdef"><b>Definition:</b> Station_Edge.h:154</div></div>
+<div class="ttc" id="aclassEdge_html"><div class="ttname"><a href="classEdge.html">Edge</a></div><div class="ttdef"><b>Definition:</b> Station_Edge.h:162</div></div>
 <div class="ttc" id="aclassStation_html_a216609bae6bdf99b1a9c2e901a9816db"><div class="ttname"><a href="classStation.html#a216609bae6bdf99b1a9c2e901a9816db">Station::adj</a></div><div class="ttdeci">vector&lt; Edge * &gt; adj</div><div class="ttdoc">Vector of edges (lines).</div><div class="ttdef"><b>Definition:</b> Station_Edge.h:55</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

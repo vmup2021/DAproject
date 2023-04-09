@@ -79,6 +79,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b10a52b8cc41b3d49213c1959b9e720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStation.html#a1b10a52b8cc41b3d49213c1959b9e720">addEdge</a> (<a class="el" href="classEdge.html">Edge</a> *e)</td></tr>
 <tr class="memdesc:a1b10a52b8cc41b3d49213c1959b9e720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an edge (line) to a station.  <a href="classStation.html#a1b10a52b8cc41b3d49213c1959b9e720">More...</a><br /></td></tr>
 <tr class="separator:a1b10a52b8cc41b3d49213c1959b9e720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f381114c74b26197240f12642877fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEdge.html">Edge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStation.html#a61f381114c74b26197240f12642877fb">getEdge</a> (const string &amp;destination) const</td></tr>
+<tr class="memdesc:a61f381114c74b26197240f12642877fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the edge pointer with a specific destination.  <a href="classStation.html#a61f381114c74b26197240f12642877fb">More...</a><br /></td></tr>
+<tr class="separator:a61f381114c74b26197240f12642877fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17bb35a315d323921b0841dd949f73e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStation.html#a17bb35a315d323921b0841dd949f73e4">setVisited</a> (bool visited)</td></tr>
 <tr class="memdesc:a17bb35a315d323921b0841dd949f73e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Visited object.  <a href="classStation.html#a17bb35a315d323921b0841dd949f73e4">More...</a><br /></td></tr>
 <tr class="separator:a17bb35a315d323921b0841dd949f73e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,9 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68d6d20ae2e97d32cda09d8c191182b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStation.html">Station</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStation.html#a68d6d20ae2e97d32cda09d8c191182b1">getPrevStation</a> () const</td></tr>
 <tr class="memdesc:a68d6d20ae2e97d32cda09d8c191182b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Prev <a class="el" href="classStation.html">Station</a> object.  <a href="classStation.html#a68d6d20ae2e97d32cda09d8c191182b1">More...</a><br /></td></tr>
 <tr class="separator:a68d6d20ae2e97d32cda09d8c191182b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc4faa5affd5b2546741b19ca6f4305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStation.html#a7cc4faa5affd5b2546741b19ca6f4305">setDist</a> (int dist)</td></tr>
-<tr class="memdesc:a7cc4faa5affd5b2546741b19ca6f4305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Dist object.  <a href="classStation.html#a7cc4faa5affd5b2546741b19ca6f4305">More...</a><br /></td></tr>
-<tr class="separator:a7cc4faa5affd5b2546741b19ca6f4305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af782f2a008cda99da038364818776696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStation.html#af782f2a008cda99da038364818776696">setDist</a> (int distance)</td></tr>
+<tr class="memdesc:af782f2a008cda99da038364818776696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Dist object.  <a href="classStation.html#af782f2a008cda99da038364818776696">More...</a><br /></td></tr>
+<tr class="separator:af782f2a008cda99da038364818776696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8002d32e57461be2e39360db8057464"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStation.html#af8002d32e57461be2e39360db8057464">getDist</a> () const</td></tr>
 <tr class="memdesc:af8002d32e57461be2e39360db8057464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Dist object.  <a href="classStation.html#af8002d32e57461be2e39360db8057464">More...</a><br /></td></tr>
 <tr class="separator:af8002d32e57461be2e39360db8057464"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,6 +249,33 @@ vector&lt; <a class="el" href="classEdge.html">Edge</a> * &gt;&#160;</td><td cla
 
 </div>
 </div>
+<a id="a61f381114c74b26197240f12642877fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f381114c74b26197240f12642877fb">&#9670;&nbsp;</a></span>getEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classEdge.html">Edge</a> * Station::getEdge </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>destination</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the edge pointer with a specific destination. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destination</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classEdge.html">Edge</a> between itself and station with name destination, if it doesn't exist returns nullptr </dd></dl>
+
+</div>
+</div>
 <a id="a352841c01b6cdb25e84cae3b7b2f6418"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a352841c01b6cdb25e84cae3b7b2f6418">&#9670;&nbsp;</a></span>getMunicipality()</h2>
 
@@ -348,8 +378,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a7cc4faa5affd5b2546741b19ca6f4305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cc4faa5affd5b2546741b19ca6f4305">&#9670;&nbsp;</a></span>setDist()</h2>
+<a id="af782f2a008cda99da038364818776696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af782f2a008cda99da038364818776696">&#9670;&nbsp;</a></span>setDist()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -358,7 +388,7 @@ false </dd></dl>
           <td class="memname">void Station::setDist </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dist</em></td><td>)</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -367,7 +397,7 @@ false </dd></dl>
 <p>Set the Dist object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dist</td><td></td></tr>
+    <tr><td class="paramname">distance</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -453,8 +483,8 @@ false </dd></dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/mnt/c/Users/up201/Desktop/FEUP/2022-23/Da/daproject/<a class="el" href="Station__Edge_8h_source.html">Station_Edge.h</a></li>
-<li>/mnt/c/Users/up201/Desktop/FEUP/2022-23/Da/daproject/Station_Edge.cpp</li>
+<li>/mnt/c/Users/up201/Desktop/FEUP/2022-23/DA/DAproject/<a class="el" href="Station__Edge_8h_source.html">Station_Edge.h</a></li>
+<li>/mnt/c/Users/up201/Desktop/FEUP/2022-23/DA/DAproject/Station_Edge.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

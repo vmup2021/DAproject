@@ -61,8 +61,23 @@ string Station::getMunicipality() const
     return municipality;
 }
 
-void Station::setDist(int dist) { this->dist = dist; }
-int Station::getDist() const { return dist; }
+void Station::setDist(int distance)
+{
+    this->dist = distance;
+}
+
+int Station::getDist() const
+{
+    return dist;
+}
+
+Edge *Station::getEdge(const string& destination) const {
+    for(auto e : this->adj){
+        if(e->getDestination()->getName() == destination)
+            return e;
+    }
+    return nullptr;
+}
 
 // Edge
 

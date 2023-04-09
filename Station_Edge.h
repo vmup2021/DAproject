@@ -73,6 +73,14 @@ public:
     void addEdge(Edge *e);
 
     /**
+     * @brief Get the edge pointer with a specific destination
+     *
+     * @param destination
+     * @return Edge between itself and station with name destination, if it doesn't exist returns nullptr
+     */
+
+    Edge* getEdge(const string& destination) const;
+    /**
      * @brief Set the Visited object.
      *
      * @param visited
@@ -118,9 +126,9 @@ public:
     /**
      * @brief Set the Dist object.
      *
-     * @param dist
+     * @param distance
      */
-    void setDist(int dist);
+    void setDist(int distance);
 
     /**
      * @brief Get the Dist object.
@@ -183,6 +191,12 @@ public:
      * @param type
      */
     Edge(Station *source, Station *destination, int capacity, string type);
+
+    /**
+     * @brief Get the source station
+     *
+     */
+    Station *getSource() const;
 
     /**
      * @brief Get the destination station

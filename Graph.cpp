@@ -44,8 +44,11 @@ void Graph::readStations(const string &lineName)
         // The graph can be one specific line(ex:Linha do Norte) or simply all the stations
         if (lineName == "all" || lineName == array_of_fields[4])
         {
-            auto *station_ = new Station(array_of_fields[0], array_of_fields[1], array_of_fields[2], array_of_fields[3], array_of_fields[4]);
-            allStations.push_back(*station_);
+            if(this->findStationByName(array_of_fields[0]) == nullptr) {
+                auto *station_ = new Station(array_of_fields[0], array_of_fields[1], array_of_fields[2],
+                                             array_of_fields[3], array_of_fields[4]);
+                allStations.push_back(*station_);
+            }
         }
 
         array_of_fields.clear();
@@ -86,11 +89,16 @@ void Graph::readEdges()
         Edge *rev_e = new Edge(s2, s1, stoi(array_of_fields[2]) / 2, string(array_of_fields[3]));
 
         // Add the edges
-        s1->addEdge(e);
-        s2->addEdge(rev_e);
+        if (s1 != nullptr && s2 != nullptr) {
+            if (s1->getEdge(s2->getName()) == nullptr) {
+                s1->addEdge(e);
+                s2->addEdge(rev_e);
 
-        e->setReverseEdge(rev_e);
-        rev_e->setReverseEdge(e);
+
+                e->setReverseEdge(rev_e);
+                rev_e->setReverseEdge(e);
+            }
+        }
 
         array_of_fields.clear();
     }

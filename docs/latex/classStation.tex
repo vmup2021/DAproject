@@ -7,6 +7,8 @@
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classStation}{Station}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classStation_a1b10a52b8cc41b3d49213c1959b9e720}{add\+Edge}} (\mbox{\hyperlink{classEdge}{Edge}} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Adds an edge (line) to a station. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEdge}{Edge}} $\ast$ \mbox{\hyperlink{classStation_a61f381114c74b26197240f12642877fb}{get\+Edge}} (const string \&destination) const
+\begin{DoxyCompactList}\small\item\em Get the edge pointer with a specific destination. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classStation_a17bb35a315d323921b0841dd949f73e4}{set\+Visited}} (bool visited)
 \begin{DoxyCompactList}\small\item\em Set the Visited object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classStation_acb0cb52eaa7ac310b847a7e6646f4694}{get\+Visited}} () const
@@ -19,7 +21,7 @@ void \mbox{\hyperlink{classStation_af63ee9da9aa061bcdaf0a45429c4993e}{set\+Prev\
 \begin{DoxyCompactList}\small\item\em Set the Prev \mbox{\hyperlink{classStation}{Station}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classStation}{Station}} $\ast$ \mbox{\hyperlink{classStation_a68d6d20ae2e97d32cda09d8c191182b1}{get\+Prev\+Station}} () const
 \begin{DoxyCompactList}\small\item\em Get the Prev \mbox{\hyperlink{classStation}{Station}} object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classStation_a7cc4faa5affd5b2546741b19ca6f4305}{set\+Dist}} (int dist)
+void \mbox{\hyperlink{classStation_af782f2a008cda99da038364818776696}{set\+Dist}} (int distance)
 \begin{DoxyCompactList}\small\item\em Set the Dist object. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classStation_af8002d32e57461be2e39360db8057464}{get\+Dist}} () const
 \begin{DoxyCompactList}\small\item\em Get the Dist object. \end{DoxyCompactList}\item 
@@ -105,6 +107,24 @@ Get the District object.
 \begin{DoxyReturn}{Returns}
 string 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classStation_a61f381114c74b26197240f12642877fb}\label{classStation_a61f381114c74b26197240f12642877fb}} 
+\index{Station@{Station}!getEdge@{getEdge}}
+\index{getEdge@{getEdge}!Station@{Station}}
+\doxysubsubsection{\texorpdfstring{getEdge()}{getEdge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEdge}{Edge}} $\ast$ Station\+::get\+Edge (\begin{DoxyParamCaption}\item[{const string \&}]{destination }\end{DoxyParamCaption}) const}
+
+
+
+Get the edge pointer with a specific destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEdge}{Edge}} between itself and station with name destination, if it doesn\textquotesingle{}t exist returns nullptr 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classStation_a352841c01b6cdb25e84cae3b7b2f6418}\label{classStation_a352841c01b6cdb25e84cae3b7b2f6418}} 
 \index{Station@{Station}!getMunicipality@{getMunicipality}}
 \index{getMunicipality@{getMunicipality}!Station@{Station}}
@@ -172,11 +192,11 @@ true
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classStation_a7cc4faa5affd5b2546741b19ca6f4305}\label{classStation_a7cc4faa5affd5b2546741b19ca6f4305}} 
+\mbox{\Hypertarget{classStation_af782f2a008cda99da038364818776696}\label{classStation_af782f2a008cda99da038364818776696}} 
 \index{Station@{Station}!setDist@{setDist}}
 \index{setDist@{setDist}!Station@{Station}}
 \doxysubsubsection{\texorpdfstring{setDist()}{setDist()}}
-{\footnotesize\ttfamily void Station\+::set\+Dist (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Station\+::set\+Dist (\begin{DoxyParamCaption}\item[{int}]{distance }\end{DoxyParamCaption})}
 
 
 
@@ -184,7 +204,7 @@ Set the Dist object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em dist} & \\
+{\em distance} & \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classStation_a5d115b3898b3dd4e2f4cd92996663cf3}\label{classStation_a5d115b3898b3dd4e2f4cd92996663cf3}} 
@@ -236,5 +256,5 @@ Set the Visited object.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+Da/daproject/\mbox{\hyperlink{Station__Edge_8h}{Station\+\_\+\+Edge.\+h}}\item 
-/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+Da/daproject/Station\+\_\+\+Edge.\+cpp\end{DoxyCompactItemize}
+/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+D\+A/\+D\+Aproject/\mbox{\hyperlink{Station__Edge_8h}{Station\+\_\+\+Edge.\+h}}\item 
+/mnt/c/\+Users/up201/\+Desktop/\+F\+E\+U\+P/2022-\/23/\+D\+A/\+D\+Aproject/Station\+\_\+\+Edge.\+cpp\end{DoxyCompactItemize}
