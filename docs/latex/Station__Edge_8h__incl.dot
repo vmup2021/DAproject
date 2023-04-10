@@ -1,9 +1,9 @@
-digraph "/mnt/c/Users/up201/Desktop/FEUP/2022-23/DA/DAproject/Station_Edge.h"
+digraph "/mnt/c/Users/up201/Desktop/FEUP/2022-23/DA/DAproject/src/Station_Edge.h"
 {
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="/mnt/c/Users/up201\l/Desktop/FEUP/2022-23\l/DA/DAproject/Station\l_Edge.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This file handles the generation and utilization of stations and edges(lines)"];
+  Node1 [label="/mnt/c/Users/up201\l/Desktop/FEUP/2022-23\l/DA/DAproject/src/Station\l_Edge.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This file handles the generation and utilization of stations and edges(lines)"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
   Node2 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
