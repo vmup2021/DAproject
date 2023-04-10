@@ -285,11 +285,6 @@ void Graph::getBudget(int x)
                 districts_or_municipalities[s2.getDistrict()] += maxFlow(s1.getName(), s2.getName());
             }
         }
-        for (auto const &entry : districts_or_municipalities)
-        {
-            cout << entry.first << ": " << entry.second << '\n';
-        }
-
         break;
     case 2:
         for (Station &s1 : allStations)
@@ -299,12 +294,18 @@ void Graph::getBudget(int x)
                 districts_or_municipalities[s2.getMunicipality()] += maxFlow(s1.getName(), s2.getName());
             }
         }
-        for (auto const &entry : districts_or_municipalities)
-        {
-            cout << entry.first << ": " << entry.second << '\n';
-        }
     default:
         break;
+    }
+
+    vector<pair<string, int>> vec(districts_or_municipalities.begin(), districts_or_municipalities.end());
+    sort(vec.begin(),vec.end(), [](const pair<string, int>& a, const pair<string, int>& b){
+        return a.second > b.second;
+    });
+
+    for(const auto& pair : vec){
+        if(!pair.first.length()) continue;
+        cout << pair.first << ": " << pair.second << endl;
     }
 }
 
@@ -317,6 +318,8 @@ int Graph::entireMaxFlow(const string &sink)
              << endl;
         return 0;
     }
+
+    setAllStationsUnvisited();
 
     // Make a superSource point
     auto *superSource = new Station("superSource", "d", "m", "t", "l");
@@ -332,7 +335,12 @@ int Graph::entireMaxFlow(const string &sink)
 
     allStations.push_back(*superSource);
 
-    return maxFlow("superSource", sink);
+    int res =  maxFlow("superSource", sink);
+
+    //Remove the created superSource
+    allStations.pop_back();
+
+    return res;
 }
 
 // T3.1
