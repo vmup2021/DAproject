@@ -23,7 +23,7 @@ void \mbox{\hyperlink{classGraph_a37d099ad4e06b7ade6917446590090de}{get\+Budget}
 \begin{DoxyCompactList}\small\item\em This function calculates the right budget for the purchasing and maintenance of trains by districts/municipalities. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classGraph_a9ff06be487b79fd5a21971cbcc4bf8b6}{entire\+Max\+Flow}} (const string \&sink)
 \begin{DoxyCompactList}\small\item\em This function calculates the maximum number of trains that can simoultaneously arrive at a given station taking into consideration the entire railway grid. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGraph_aa96e599d5c1e437b28c483eb0bdb53ae}{shortest\+Path\+Cost}} (const string \&source, const string \&destination)
+pair$<$ int, int $>$ \mbox{\hyperlink{classGraph_a95ac63d731ed11af5e88788ed5416a41}{shortest\+Path\+Cost}} (const string \&source, const string \&destination)
 \begin{DoxyCompactList}\small\item\em This function calculates the minimum cost path between two stations. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classGraph_a34dfaf45e1ddbbddd23f98b6c842c2f5}{get\+Lines}} ()
 \begin{DoxyCompactList}\small\item\em This function calculates the number of edges/lines that exist in the entire railway grid. \end{DoxyCompactList}\item 
@@ -220,11 +220,11 @@ This functions handles the generation of the graph nodes from the file \char`\"{
 
 This is an auxiliary function that sets the attribute visited of every station in the graph as false. 
 
-\mbox{\Hypertarget{classGraph_aa96e599d5c1e437b28c483eb0bdb53ae}\label{classGraph_aa96e599d5c1e437b28c483eb0bdb53ae}} 
+\mbox{\Hypertarget{classGraph_a95ac63d731ed11af5e88788ed5416a41}\label{classGraph_a95ac63d731ed11af5e88788ed5416a41}} 
 \index{Graph@{Graph}!shortestPathCost@{shortestPathCost}}
 \index{shortestPathCost@{shortestPathCost}!Graph@{Graph}}
 \doxysubsubsection{\texorpdfstring{shortestPathCost()}{shortestPathCost()}}
-{\footnotesize\ttfamily int Graph\+::shortest\+Path\+Cost (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{const string \&}]{destination }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Graph\+::shortest\+Path\+Cost (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{const string \&}]{destination }\end{DoxyParamCaption})}
 
 
 

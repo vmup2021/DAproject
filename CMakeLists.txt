@@ -3,4 +3,4 @@ project(DA_)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DA_ main.cpp Station_Edge.cpp Graph.cpp menu.cpp)
+add_executable(DA_ src/main.cpp src/Station_Edge.cpp src/Graph.cpp src/menu.cpp src/Graph.cpp)

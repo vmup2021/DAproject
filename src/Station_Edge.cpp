@@ -46,6 +46,11 @@ Station *Station::getPrevStation() const
     return prevStation;
 }
 
+int Station::getMaxTrains() const
+{
+    return maxTrains;
+}
+
 string Station::getName() const
 {
     return name;
@@ -71,9 +76,16 @@ int Station::getDist() const
     return dist;
 }
 
-Edge *Station::getEdge(const string& destination) const {
-    for(auto e : this->adj){
-        if(e->getDestination()->getName() == destination)
+void Station::setMaxTrains(int max_trains)
+{
+    this->maxTrains = max_trains;
+}
+
+Edge *Station::getEdge(const string &destination) const
+{
+    for (auto e : this->adj)
+    {
+        if (e->getDestination()->getName() == destination)
             return e;
     }
     return nullptr;

@@ -50,6 +50,9 @@ private:
     /// @brief Variable utilized in the shortestPah calculations.
     int dist;
 
+    /// @brief Variable utilized in the shortestPah calculations.
+    int maxTrains;
+
 public:
     /// @brief Vector of edges (lines).
     vector<Edge *> adj;
@@ -79,7 +82,7 @@ public:
      * @return Edge between itself and station with name destination, if it doesn't exist returns nullptr
      */
 
-    Edge* getEdge(const string& destination) const;
+    Edge *getEdge(const string &destination) const;
     /**
      * @brief Set the Visited object.
      *
@@ -136,6 +139,20 @@ public:
      * @return int
      */
     int getDist() const;
+
+    /**
+     * @brief Set the MaxTrains object.
+     *
+     * @param max_trains
+     */
+    void setMaxTrains(int max_trains);
+
+    /**
+     * @brief Get the MaxTrains object.
+     *
+     * @return int
+     */
+    int getMaxTrains() const;
 
     /**
      * @brief Get the Name object.

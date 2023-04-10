@@ -111,7 +111,7 @@ public:
      * @param destination Name of the destination station
      * @return int Cost of the minimum cost path between the two stations
      */
-    int shortestPathCost(const string &source, const string &destination);
+    pair <int, int> shortestPathCost(const string &source, const string &destination);
 
     /**
      * @brief This function calculates the number of edges/lines that exist in the entire railway grid

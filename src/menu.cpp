@@ -194,7 +194,8 @@ void maxTrainsArriveAtStation(Graph *r)
     clearBuffer();
     cout << "Enter station to be tested: ";
     getline(cin, station);
-    cout << "A maximum of " << r->entireMaxFlow(station) << " can arrive simultaneously at " << station << "." << endl << endl;
+    cout << "A maximum of " << r->entireMaxFlow(station) << " can arrive simultaneously at " << station << "." << endl
+         << endl;
 }
 
 /************* Cost Optimization Menu *************/
@@ -249,11 +250,13 @@ void minimumCostBetweenStations(Graph *r)
     cout << "Destination: ";
     getline(cin, destination);
 
-    int result = r->shortestPathCost(source, destination);
-    if(result == 0)
-        cout << "There is no path between " << source << " and " << destination << "." << endl << endl;
+    pair <int, int> result = r->shortestPathCost(source, destination);
+    if (result.first == 0)
+        cout << "There is no path between " << source << " and " << destination << "." << endl
+             << endl;
     else
-        cout << "The minimum cost path between " << source << " and " << destination << " is " << result << "." << endl << endl;
+        cout << "The minimum cost path between " << source << " and " << destination << " is " << result.first<< " for " << result.second << " trains." << endl
+             << endl;
 }
 
 /************* Reliability Menu *************/

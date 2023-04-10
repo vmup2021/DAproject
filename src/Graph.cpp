@@ -44,7 +44,8 @@ void Graph::readStations(const string &lineName)
         // The graph can be one specific line(ex:Linha do Norte) or simply all the stations
         if (lineName == "all" || lineName == array_of_fields[4])
         {
-            if(this->findStationByName(array_of_fields[0]) == nullptr) {
+            if (this->findStationByName(array_of_fields[0]) == nullptr)
+            {
                 auto *station_ = new Station(array_of_fields[0], array_of_fields[1], array_of_fields[2],
                                              array_of_fields[3], array_of_fields[4]);
                 allStations.push_back(*station_);
@@ -89,11 +90,12 @@ void Graph::readEdges()
         Edge *rev_e = new Edge(s2, s1, stoi(array_of_fields[2]) / 2, string(array_of_fields[3]));
 
         // Add the edges
-        if (s1 != nullptr && s2 != nullptr) {
-            if (s1->getEdge(s2->getName()) == nullptr) {
+        if (s1 != nullptr && s2 != nullptr)
+        {
+            if (s1->getEdge(s2->getName()) == nullptr)
+            {
                 s1->addEdge(e);
                 s2->addEdge(rev_e);
-
 
                 e->setReverseEdge(rev_e);
                 rev_e->setReverseEdge(e);
@@ -299,12 +301,13 @@ void Graph::getBudget(int x)
     }
 
     vector<pair<string, int>> vec(districts_or_municipalities.begin(), districts_or_municipalities.end());
-    sort(vec.begin(),vec.end(), [](const pair<string, int>& a, const pair<string, int>& b){
-        return a.second > b.second;
-    });
+    sort(vec.begin(), vec.end(), [](const pair<string, int> &a, const pair<string, int> &b)
+         { return a.second > b.second; });
 
-    for(const auto& pair : vec){
-        if(!pair.first.length()) continue;
+    for (const auto &pair : vec)
+    {
+        if (!pair.first.length())
+            continue;
         cout << pair.first << ": " << pair.second << endl;
     }
 }
@@ -335,22 +338,24 @@ int Graph::entireMaxFlow(const string &sink)
 
     allStations.push_back(*superSource);
 
-    int res =  maxFlow("superSource", sink);
+    int res = maxFlow("superSource", sink);
 
-    //Remove the created superSource
+    // Remove the created superSource
     allStations.pop_back();
 
     return res;
 }
 
 // T3.1
-int Graph::shortestPathCost(const string &source, const string &destination)
+pair <int, int> Graph::shortestPathCost(const string &source, const string &destination)
 {
     setAllStationsUnvisited();
 
     // Set all the distances as infinite first
-    for (Station &s : allStations)
+    for (Station &s : allStations) {
         s.setDist(INT_MAX);
+        s.setMaxTrains(INT_MAX);
+    }
 
     // Lambda function that compares two station based on the distance
     auto comp = [this](Station *a, Station *b)
@@ -372,8 +377,13 @@ int Graph::shortestPathCost(const string &source, const string &destination)
         current_station->setVisited(true);
 
         // If the cost for the destination already has been set, the function can exit
-        if (current_station == d)
-            return d->getDist();
+        if (current_station == d){
+            pair <int, int> result;
+            result.first = d->getDist();
+            result.second = d->getMaxTrains();
+            return result;
+        }
+
 
         for (auto &e : current_station->adj)
         {
@@ -383,15 +393,20 @@ int Graph::shortestPathCost(const string &source, const string &destination)
                 continue;
 
             int new_dist = current_station->getDist() + e->getCapacity() * (e->getType() == "STANDARD" ? 2 : 4);
+            int new_maxTrains = min(current_station->getMaxTrains(), e->getCapacity());
             if (new_dist < next_station->getDist())
             {
                 next_station->setDist(new_dist);
+                next_station->setMaxTrains(new_maxTrains);
                 pq.push(next_station);
             }
         }
     }
     // Case that the source cannot reach the destination
-    return 0;
+    pair <int, int> zero;
+    zero.first = 0;
+    zero.second = 0;
+    return zero;
 }
 
 int Graph::getLines()
